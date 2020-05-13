@@ -1,0 +1,63 @@
+{% extends 'layout.html'%}
+<html>
+    <head>
+        <style>
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            </style>
+        
+
+    </head>
+    <body>
+    {% block body%}
+    <div class="container pt 5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-3">
+                <h2> Fill this form for Predict!</h2>
+                <form action="/prediction" method="POST">
+                    <select class="form-control form control-sm" name="purpose">
+                    <option value="">Select Purpose</option>
+                    {% for item in data_purpose%}
+                        <option value="{{item}}">{{item}}</option>
+                    {% endfor %}
+                    </select>
+
+                    <input type="Credit Score" name="Credit Score" max="20" min="0" placeholder="number of Credit Score" class="form-control form-control-sm mt-2 ">
+
+                    <input type="Current Loan Amount" name="Current loan amount" max="20" min="0" placeholder="number of Current loan amount" class="form-control form-control-sm mt-2 ">
+
+                    <input type="Number of Open Accounts" name="Number of open accounts" placeholder="Number of open accounts" class="form-control form-control-sm mt-2 ">
+                    
+                    
+
+                    <select name="Term" class="form-control form-control-sm mt-2">
+                        <option value="term" disabled selected> Term</option>
+                        <option value="Long Term"> Long Term</option>
+                        <option value="Short Term"> Short Term</option>
+                    </select>
+
+                    <!-- <select name="Home Ownership" class="form-control form-control-sm mt-2">
+                        <option value="">Home Ownership</option>
+                        {% for item in data_homeowner %}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select> -->
+
+                    <select name="Years Current Job" class="form-control form-control-sm mt-2">
+                        <option value="">Years Current Job</option>
+                        {% for item in data_years_in_current_job %}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit" class="btn btn-info mt-4">Let's Predict</button>
+                    
+                </form>
+            </div>
+        </div>
+    <div>
+    {% endblock body%}
+    </body>
+</html>

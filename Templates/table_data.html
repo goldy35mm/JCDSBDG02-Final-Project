@@ -1,0 +1,39 @@
+{% extends 'layout.html'%}
+
+
+
+
+{% block body %}
+<style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    </style>
+    
+    <table class="center" border="2" width='500px' style="text-align:center;">
+        <thead>
+            <tr>
+                {% for item in data.columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, item in data.iterrows()%}
+                <tr>
+                    {% for col in item %}
+                        <td>{{col}}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            
+        </tbody>
+       
+    <!-- {% include 'includes/pagination.html'%} -->
+        
+        
+    </table>
+{% endblock body %}
+

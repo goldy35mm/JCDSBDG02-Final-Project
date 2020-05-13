@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Bank Loans Prediction</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        {% include 'includes/navbar.html'%}
+        <style>
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            </style>
+        <div class="container">
+            <img src="https://i.imgur.com/Y9wUrjF.jpg" alt="600" width="500" class="center">
+            <!-- <img src="https://images.iphonephotographyschool.com/18836/1120/perspective-photography.jpg" width="1120" height="840"> -->
+            {% block body %}
+            {% endblock %}
+            {% include 'includes/footer.html'%}
+    </body>
+</html>

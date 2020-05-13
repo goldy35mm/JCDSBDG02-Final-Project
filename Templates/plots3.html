@@ -1,0 +1,18 @@
+{% extends 'layout.html'%}
+
+{% block body %}
+    <p style="font-family:sans-serif;font-size: 32px">Distribution Purpose </p>
+    <i>Explaination about distribution Purpose by credit score and annual income</i>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="chart mt-0" id="graph3">
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        var graph3 = {{data | safe}}
+        Plotly.plot('graph3',graph3,{})   
+    </script>
+{% endblock body %}

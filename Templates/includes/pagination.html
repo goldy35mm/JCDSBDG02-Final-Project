@@ -1,0 +1,89 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>jQuery: table pagination</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+
+  <style type="text/css">
+    table {
+      width: 40em;
+      margin: 2em auto;
+    }
+    
+    thead {
+      background: #000;
+      color: #fff;
+    }
+    
+    td {
+      width: 10em;
+      padding: 0.3em;
+    }
+    
+    tbody {
+      background: #ccc;
+    }
+    
+    div.pager {
+      text-align: center;
+      margin: 1em 0;
+    }
+    
+    div.pager span {
+      display: inline-block;
+      width: 1.8em;
+      height: 1.8em;
+      line-height: 1.8;
+      text-align: center;
+      cursor: pointer;
+      background: #000;
+      color: #fff;
+      margin-right: 0.5em;
+    }
+    
+    div.pager span.active {
+      background: #c00;
+    }
+  </style>
+  <!-- TODO: Missing CoffeeScript 2 -->
+</head>
+
+<body>
+  {% extends 'layout.html'%}
+
+
+
+
+{% block body %}
+    <table class="center" border="2" width='500px' style="text-align:center;">
+        <thead>
+            <tr>
+                {% for item in data.columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, item in data.iterrows()%}
+                <tr>
+                    {% for col in item %}
+                        <td>{{col}}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            
+        </tbody>
+        
+        
+    </table>
+{% endblock body %}
+</body>
+
+</html>
