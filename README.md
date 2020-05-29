@@ -2,7 +2,18 @@
 
 ## Bank Loans
 
-Objective: I would need to predict whether a Loan Application would be approved or rejected.
+Objective:The primary objective of the bank is to provide their
+  wealth in the safer hands. In recent times, banks approve
+  loan after verifying and validating the documents provided
+  by the customer. Yet there is no guarantee whether the
+  applicant is deserving or not. This task classifies the
+  customers based on certain criteria. The classification is
+  done using Exploratory Data Analysis. Exploratory Data
+  Analysis (EDA) is an approach to analyse the datasets that
+  summarizes the main characteristics with visual methods.
+  The purpose of using EDA is to uncover the underlying
+  structure of a relatively larger set of variables using
+  visualizing techniques.I would need to predict using machine learning whether a Loan Application would be approved or rejected.
 
 **Banks fundamental business model rely on financial intermediation by raising finance and lending (mortgage, real estate, consumer and companies loans). the latter is the major source of credit risk composed from 2 main points loan approval and rejected. In this task I will focus on loan approval by using machine learning models**
 
