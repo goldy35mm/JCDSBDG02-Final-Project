@@ -44,7 +44,21 @@ Objective:The primary objective of the bank is to provide their
 ![alt text](https://i.ibb.co/z8HXF2H/Screenshot-98.png)
 ![alt text](https://i.ibb.co/QbkMJW9/Screenshot-97.png)
 
+### CONCLUSION AND FUTURE WORK
 
+The main purpose of the task is to classify and analyse
+the nature of the loan applicants. From a proper analysis of
+data set and constraints of the banking sector, 
+different graphs were generated and visualized. From the
+graphs, many conclusions have been made and information
+were inferred such as short-term loan was preferred by
+majority of the loan applicants and the clients majorly apply
+loan for debt consolidation.
+This task work can be extended to higher level in future.
+Predictive model for loans that uses machine learning
+algorithms, where the results from each graph of the paper
+can be taken as individual criteria for the machine learning
+algorithm.Because the predictions are not 100%, there is an error of about 25% in predictions, resulting in predictions that are rejected will be accepted there are as many as 25%. Adding data parameters will help improve accuracy
 
 
 
