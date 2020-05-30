@@ -39,7 +39,13 @@ Objective:The primary objective of the bank is to provide their
 ![alt text](https://i.ibb.co/VWBQH7J/Screenshot-94.png)
 ![alt text](https://i.ibb.co/2SrfFsx/Screenshot-93.png)
 ![alt text](https://i.ibb.co/MGMYCgg/Screenshot-91.png)
+
+Creating interactive visualization and dive down to each data point
+We can start form hypothesis about data and the problem
+The purpose of using EDA is to uncover the underlying structure of a relatively larger set of variables using visualizing techniques. Which provides the banker to decide whether the loan can be given to the costumer or not
+
 #### **Prediction**
+
 ![alt text](https://i.ibb.co/b77VVn6/Screenshot-96.png)
 ![alt text](https://i.ibb.co/z8HXF2H/Screenshot-98.png)
 ![alt text](https://i.ibb.co/QbkMJW9/Screenshot-97.png)
