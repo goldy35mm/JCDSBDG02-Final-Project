@@ -25,10 +25,8 @@ Objective:The primary objective of the bank is to provide their
 ![alt text](https://i.ibb.co/x50tdmt/Screenshot-104.png)
 
 
-
-
-
-
+### Machine Learning
+![alt text](https://i.ibb.co/QMrRpXC/Screenshot-105.png)
 
 #### **Homepage**
 ![alt text](https://i.ibb.co/Jt9bkR8/Screenshot-90.png)
