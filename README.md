@@ -17,6 +17,15 @@ Objective:The primary objective of the bank is to provide their
 
 **Banks fundamental business model rely on financial intermediation by raising finance and lending (mortgage, real estate, consumer and companies loans). the latter is the major source of credit risk composed from 2 main points loan approval and rejected. In this task I will focus on loan approval by using machine learning models**
 
+## Timeline
+
+![alt text](https://i.ibb.co/9ntByh8/Screenshot-103.png)
+
+### Missing Values
+![alt text](https://i.ibb.co/x50tdmt/Screenshot-104.png)
+
+
+
 
 
 
